@@ -5,8 +5,9 @@ const WA_SVG = `<svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.75
 function buildNav() {
   return `
   <nav id="site-nav">
-    <a href="index.html" class="nav-logo">
-      <img src="assets/logo.png" alt="House of Calvary">
+    <a href="index.html" class="nav-logo" id="nav-logo-link">
+      <img src="assets/logo.png" alt="" id="nav-logo-img" onerror="this.style.display='none'; document.getElementById('nav-logo-text').style.display='block';">
+      <span class="nav-logo-text" id="nav-logo-text" style="display:none;">House of Calvary †</span>
     </a>
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>

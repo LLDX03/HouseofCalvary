@@ -5,129 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>House of Calvary † — Tattoo Studio Singapore</title>
   <meta name="description" content="House of Calvary is a premier tattoo studio in Singapore. Book your session via WhatsApp.">
-  <link rel="stylesheet" href="css/styles.css">
-  <style>
-    /* About section layout */
-    .about-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 80px;
-      align-items: center;
-    }
-
-    .about-image {
-      width: 100%;
-      aspect-ratio: 3/4;
-      overflow: hidden;
-      border: 1px solid var(--border);
-    }
-
-    .about-image img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: center top;
-    }
-
-    .about-text blockquote {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: clamp(22px, 3vw, 32px);
-      font-weight: 300;
-      font-style: italic;
-      line-height: 1.5;
-      color: var(--text);
-      border-left: 1px solid var(--accent);
-      padding-left: 28px;
-      margin-bottom: 32px;
-    }
-
-    .about-text p {
-      font-size: 14px;
-      color: var(--text-muted);
-      line-height: 1.95;
-      margin-bottom: 16px;
-    }
-
-    /* Team cards with photo */
-    .team-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 20px;
-      margin-top: 52px;
-    }
-
-    .team-card {
-      background: var(--bg-card);
-      border: 1px solid var(--border);
-      overflow: hidden;
-      transition: border-color 0.25s;
-    }
-
-    .team-card:hover { border-color: rgba(201,168,76,0.4); }
-
-    .team-photo {
-      width: 100%;
-      aspect-ratio: 1/1;
-      overflow: hidden;
-      background: #1a1a1a;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .team-photo img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: center top;
-      display: block;
-    }
-
-    /* Placeholder when no photo */
-    .team-photo-placeholder {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 64px;
-      font-weight: 300;
-      color: rgba(255,255,255,0.06);
-    }
-
-    .team-info {
-      padding: 24px 28px;
-    }
-
-    .team-name {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 26px;
-      font-weight: 400;
-      margin-bottom: 4px;
-    }
-
-    .team-role {
-      font-size: 10px;
-      letter-spacing: 0.25em;
-      text-transform: uppercase;
-      color: var(--accent);
-      margin-bottom: 8px;
-    }
-
-    .team-specialty {
-      font-size: 12px;
-      color: var(--text-muted);
-      letter-spacing: 0.04em;
-    }
-
-    @media (max-width: 960px) {
-      .about-grid { grid-template-columns: 1fr; gap: 48px; }
-      .about-image { aspect-ratio: 4/3; }
-      .team-grid { grid-template-columns: repeat(3, 1fr); gap: 12px; }
-      .team-info { padding: 16px 20px; }
-      .team-name { font-size: 20px; }
-    }
-
-    @media (max-width: 600px) {
-      .team-grid { grid-template-columns: 1fr; }
-    }
-  </style>
+  <link rel="stylesheet" href="/src/css/base.css">
+  <link rel="stylesheet" href="/src/css/layout.css">
+  <link rel="stylesheet" href="/src/css/components.css">
+  <link rel="stylesheet" href="/src/css/utilities.css">
+  <link rel="stylesheet" href="/src/css/pages/home.css">
 </head>
 <body>
 
@@ -151,7 +33,7 @@
     <div class="about-grid">
 
       <div class="about-image">
-        <img src="assets/.jpg" alt="House of Calvary Studio">
+        <img src="/artist-showcase.jpg" alt="House of Calvary Studio">
       </div>
 
       <div class="about-text">
@@ -190,7 +72,7 @@
 
         <div class="team-card">
           <div class="team-photo">
-            <img src="assets/sherman.jpg" alt="Sherman"
+            <img src="/sherman.jpg" alt="Sherman"
               onerror="this.style.display='none'; this.parentElement.innerHTML='<span class=\'team-photo-placeholder\'>S</span>'">
           </div>
           <div class="team-info">
@@ -202,7 +84,7 @@
 
         <div class="team-card">
           <div class="team-photo">
-            <img src="assets/mica.jpg" alt="Mica"
+            <img src="/mica.jpg" alt="Mica"
               onerror="this.style.display='none'; this.parentElement.innerHTML='<span class=\'team-photo-placeholder\'>M</span>'">
           </div>
           <div class="team-info">
@@ -214,7 +96,7 @@
 
         <div class="team-card">
           <div class="team-photo">
-            <img src="assets/nicholas.jpg" alt="Nicholas"
+            <img src="/nicholas.jpg" alt="Nicholas"
               onerror="this.style.display='none'; this.parentElement.innerHTML='<span class=\'team-photo-placeholder\'>N</span>'">
           </div>
           <div class="team-info">
@@ -226,7 +108,7 @@
 
       </div>
 
-      <div style="text-align:center; margin-top:40px;">
+      <div class="team-cta">
         <a href="artists.html" class="btn btn-outline">Meet the Artists</a>
       </div>
     </section>
@@ -234,7 +116,7 @@
 
   <!-- CTA -->
   <div class="cta-band">
-    <div class="eyebrow" style="justify-content:center;">Ready?</div>
+    <div class="eyebrow eyebrow--center">Ready?</div>
     <h2 class="section-title">Start your<br><em>journey</em></h2>
     <p>Reach out via WhatsApp to discuss your ideas.<br>Free consultation, transparent pricing, no pressure.</p>
     <a href="https://wa.me/6593294993" target="_blank" rel="noopener" class="btn btn-gold">Book via WhatsApp</a>
@@ -242,6 +124,6 @@
 
 </main>
 
-<script src="js/main.js"></script>
+<script type="module" src="/src/main.js"></script>
 </body>
 </html>

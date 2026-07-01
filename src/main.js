@@ -6,7 +6,7 @@ function buildNav() {
   return `
   <nav id="site-nav">
     <a href="index.html" class="nav-logo" id="nav-logo-link">
-      <img src="assets/logo.png" alt="" id="nav-logo-img" onerror="this.style.display='none'; document.getElementById('nav-logo-text').style.display='block';">
+      <img src="/logo.png" alt="" id="nav-logo-img" onerror="this.style.display='none'; document.getElementById('nav-logo-text').style.display='block';">
       <span class="nav-logo-text" id="nav-logo-text" style="display:none;">House of Calvary †</span>
     </a>
     <ul class="nav-links">

@@ -1,0 +1,19 @@
+/* Small reusable helpers extracted from repeated inline style="" attributes */
+
+/* Centers an .eyebrow label (used when a section is centered, e.g. inside .cta-band) */
+.eyebrow--center { justify-content: center; }
+
+/* "See more" style closer: centered text with a top rule, used below a content grid */
+.cta-divider {
+  text-align: center;
+  margin-top: 60px;
+  padding-top: 60px;
+  border-top: 1px solid var(--border);
+}
+
+/* Small muted caption text, e.g. below a divider or under a heading */
+.caption-muted {
+  color: var(--text-muted);
+  font-size: 13px;
+  letter-spacing: 0.05em;
+}

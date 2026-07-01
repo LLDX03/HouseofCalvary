@@ -1,0 +1,77 @@
+.pricing-wrap {
+  max-width: 760px;
+  margin: 52px auto 0;
+}
+
+.pricing-header {
+  border: 1px solid var(--border);
+  padding: 48px 52px 36px;
+  margin-bottom: 1px;
+  background: var(--bg-card);
+}
+
+.pricing-header p {
+  color: var(--text-muted);
+  font-size: 14px;
+  line-height: 1.9;
+  max-width: 560px;
+}
+
+.pricing-items { border: 1px solid var(--border); background: var(--bg-card); }
+
+.pricing-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 26px 52px;
+  border-bottom: 1px solid var(--border);
+  gap: 20px;
+}
+
+.pricing-item:last-child { border-bottom: none; }
+
+.pricing-label {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.pricing-label small {
+  display: block;
+  font-family: 'Inter', sans-serif;
+  font-size: 11px;
+  color: var(--text-muted);
+  font-weight: 300;
+  margin-top: 2px;
+  letter-spacing: 0.05em;
+}
+
+.pricing-value {
+  color: var(--accent);
+  font-size: 13px;
+  letter-spacing: 0.06em;
+  white-space: nowrap;
+}
+
+.pricing-footer {
+  border: 1px solid var(--border);
+  margin-top: 1px;
+  padding: 36px 52px;
+  background: var(--bg-card);
+}
+
+.pricing-footer p {
+  color: var(--text-muted);
+  font-size: 13px;
+  line-height: 1.9;
+  margin-bottom: 28px;
+}
+
+/* Highlighted label within the deposit-policy paragraph */
+.pricing-footer strong { color: var(--text); font-weight: 400; }
+
+@media (max-width: 768px) {
+  .pricing-wrap { margin-top: 32px; }
+  .pricing-item { padding: 20px 24px; flex-direction: column; align-items: flex-start; gap: 6px; }
+  .pricing-header, .pricing-footer { padding: 28px 24px; }
+}

@@ -1,0 +1,112 @@
+.recruitment-content {
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: calc(var(--nav-height) + 80px) 48px 100px;
+}
+
+.recruitment-inner {
+  max-width: 640px;
+  width: 100%;
+  text-align: center;
+}
+
+.recruitment-inner .eyebrow { margin-bottom: 16px; }
+
+.recruitment-cross {
+  font-size: 72px;
+  color: rgba(201,168,76,0.15);
+  line-height: 1;
+  margin-bottom: 48px;
+  display: block;
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 300;
+}
+
+.recruitment-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(48px, 8vw, 88px);
+  font-weight: 300;
+  letter-spacing: 0.04em;
+  line-height: 1;
+  margin-bottom: 20px;
+}
+
+.recruitment-title em { font-style: italic; color: var(--accent); }
+
+.recruitment-intro {
+  color: var(--text-muted);
+  font-size: 14px;
+  line-height: 1.9;
+  max-width: 480px;
+  margin: 0 auto 40px;
+}
+
+.req-tag {
+  display: inline-block;
+  border: 1px solid rgba(201,168,76,0.3);
+  color: var(--accent);
+  font-size: 10px;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  padding: 6px 16px;
+  margin-bottom: 40px;
+}
+
+.divider-line {
+  width: 1px;
+  height: 60px;
+  background: var(--border);
+  margin: 40px auto;
+}
+
+.recruitment-tagline {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 22px;
+  font-weight: 300;
+  color: var(--text);
+  line-height: 1.7;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.recruitment-label {
+  color: var(--text-muted);
+  font-size: 12px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.recruitment-email {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 28px;
+  color: var(--accent);
+  text-decoration: none;
+  letter-spacing: 0.04em;
+  transition: color 0.2s;
+  display: block;
+  margin: 32px 0;
+}
+
+.recruitment-email:hover { color: var(--accent-hover); }
+
+.recruitment-subcaption {
+  color: var(--text-muted);
+  font-size: 12px;
+  margin-top: 24px;
+  margin-bottom: 20px;
+}
+
+.recruitment-links {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .recruitment-content { padding: 60px 20px; }
+  .recruitment-email { font-size: 20px; }
+}

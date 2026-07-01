@@ -5,118 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Artists — House of Calvary †</title>
   <meta name="description" content="Meet the tattoo artists of House of Calvary, Singapore.">
-  <link rel="stylesheet" href="css/styles.css">
-  <style>
-    /* Artist card expanded */
-    .artists-grid-full {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 1px;
-      background: var(--border);
-      margin-top: 52px;
-    }
-
-    .artist-card-full {
-      background: var(--bg-card);
-      padding: 56px 44px 48px;
-      position: relative;
-      overflow: hidden;
-      transition: background 0.25s;
-    }
-
-    .artist-card-full:hover { background: #141414; }
-
-    .artist-card-number {
-      position: absolute;
-      top: 20px;
-      right: 28px;
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 120px;
-      font-weight: 300;
-      color: rgba(255,255,255,0.03);
-      line-height: 1;
-      pointer-events: none;
-      user-select: none;
-    }
-
-    .artist-card-full .artist-name {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 44px;
-      font-weight: 300;
-      letter-spacing: 0.02em;
-      margin-bottom: 6px;
-      line-height: 1;
-    }
-
-    .artist-card-full .artist-role {
-      font-size: 10px;
-      letter-spacing: 0.3em;
-      text-transform: uppercase;
-      color: var(--accent);
-      margin-bottom: 36px;
-    }
-
-    .artist-divider {
-      width: 32px;
-      height: 1px;
-      background: var(--border);
-      margin-bottom: 36px;
-    }
-
-    .artist-card-full .artist-links {
-      display: flex;
-      flex-direction: column;
-      gap: 14px;
-    }
-
-    .artist-card-full .ig-link {
-      font-size: 13px;
-      letter-spacing: 0.04em;
-    }
-
-    /* Stats strip */
-    .stats-strip {
-      border-top: 1px solid var(--border);
-      border-bottom: 1px solid var(--border);
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-    }
-
-    .stat-item {
-      padding: 40px 48px;
-      border-right: 1px solid var(--border);
-      text-align: center;
-    }
-
-    .stat-item:last-child { border-right: none; }
-
-    .stat-number {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 52px;
-      font-weight: 300;
-      color: var(--accent);
-      line-height: 1;
-      display: block;
-    }
-
-    .stat-label {
-      font-size: 10px;
-      letter-spacing: 0.25em;
-      text-transform: uppercase;
-      color: var(--text-muted);
-      margin-top: 8px;
-      display: block;
-    }
-
-    @media (max-width: 960px) {
-      .artists-grid-full { grid-template-columns: 1fr; }
-      .artist-card-full { padding: 44px 32px; }
-      .artist-card-full .artist-name { font-size: 36px; }
-      .stats-strip { grid-template-columns: 1fr; }
-      .stat-item { border-right: none; border-bottom: 1px solid var(--border); padding: 32px 32px; }
-      .stat-item:last-child { border-bottom: none; }
-    }
-  </style>
+  <link rel="stylesheet" href="/src/css/base.css">
+  <link rel="stylesheet" href="/src/css/layout.css">
+  <link rel="stylesheet" href="/src/css/components.css">
+  <link rel="stylesheet" href="/src/css/utilities.css">
+  <link rel="stylesheet" href="/src/css/pages/artists.css">
 </head>
 <body>
 
@@ -129,13 +22,9 @@
   </div>
 
   <!-- Studio Showcase -->
-  <section style="max-width:720px; margin:0 auto; padding-bottom:0;">
+  <section class="studio-showcase">
     <div class="eyebrow">The Studio</div>
-    <img
-      src="assets/artist-showcase.jpg"
-      alt="House of Calvary — studio work"
-      style="width:100%; display:block; border:1px solid var(--border);"
-    >
+    <img src="/artist-showcase.jpg" alt="House of Calvary — studio work">
   </section>
 
   <!-- Artist Cards -->
@@ -149,7 +38,7 @@
         <span class="artist-card-number">01</span>
         <div class="artist-name">Sherman</div>
         <div class="artist-role">Tattoo Artist</div>
-        <p style="font-size:12px; color:var(--text-muted); letter-spacing:0.08em; margin-bottom:28px;">Realism · Japanese · Blackwork</p>
+        <p class="artist-specialty">Realism · Japanese · Blackwork</p>
         <div class="artist-divider"></div>
         <div class="artist-links">
           <a href="https://www.instagram.com/shermstattoo/" target="_blank" rel="noopener" class="ig-link">
@@ -167,7 +56,7 @@
         <span class="artist-card-number">02</span>
         <div class="artist-name">Mica</div>
         <div class="artist-role">Tattoo Artist</div>
-        <p style="font-size:12px; color:var(--text-muted); letter-spacing:0.08em; margin-bottom:28px;">Color Realism · Florals</p>
+        <p class="artist-specialty">Color Realism · Florals</p>
         <div class="artist-divider"></div>
         <div class="artist-links">
           <a href="https://www.instagram.com/micabuns.tattoo/" target="_blank" rel="noopener" class="ig-link">
@@ -181,11 +70,11 @@
         </div>
       </div>
 
-      <div class="artist-card-full" style="position:relative; overflow:hidden; background:var(--bg-card);">
+      <div class="artist-card-full">
         <span class="artist-card-number">03</span>
         <div class="artist-name">Nicholas</div>
         <div class="artist-role">Tattoo Artist</div>
-        <p style="font-size:12px; color:var(--text-muted); letter-spacing:0.08em; margin-bottom:28px;">Realism · Japanese · Blackwork</p>
+        <p class="artist-specialty">Realism · Japanese · Blackwork</p>
         <div class="artist-divider"></div>
         <div class="artist-links">
           <a href="https://www.instagram.com/n.tattooer/" target="_blank" rel="noopener" class="ig-link">
@@ -204,7 +93,7 @@
 
   <!-- CTA -->
   <div class="cta-band">
-    <div class="eyebrow" style="justify-content:center;">Book a Session</div>
+    <div class="eyebrow eyebrow--center">Book a Session</div>
     <h2 class="section-title">Ready to get<br><em>inked?</em></h2>
     <p>Reach out via WhatsApp to discuss your ideas. Free consultation, no pressure.</p>
     <a href="https://wa.me/6593294993" target="_blank" rel="noopener" class="btn btn-gold">Book via WhatsApp</a>
@@ -212,6 +101,6 @@
 
 </main>
 
-<script src="js/main.js"></script>
+<script type="module" src="/src/main.js"></script>
 </body>
 </html>
